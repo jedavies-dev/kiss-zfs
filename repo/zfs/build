@@ -1,7 +1,6 @@
 #!/bin/sh -e
 
 ./configure \
-    --build=powerpc64le-musl-linux \
     --disable-systemd \
     --disable-sysvinit \
     --disable-nls \
