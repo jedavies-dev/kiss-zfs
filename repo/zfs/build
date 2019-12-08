@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+./configure \
+    --build=powerpc64le-musl-linux \
+    --disable-systemd \
+    --disable-sysvinit \
+    --disable-nls \
+    --enable-linux-builtin \
+    --prefix=/usr \
+    --sysconfdir=/etc
+
+make
+make DESTDIR="$1" install
+
+cd module
+make
+make DESTDIR="$1" install
+
+# Clean up some things we don't need
+rm -Rf "$1/usr/share/zfs/zfs-tests"
+rm -Rf "$1/usr/lib/dracut/"
+rm -Rf "$1/usr/share/initramfs-tools/"

@@ -1,0 +1,3 @@
+#!/bin/sh
+depmod
+echo "Note: you must rebuild this package if you update your kernel."
