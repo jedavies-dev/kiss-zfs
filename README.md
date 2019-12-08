@@ -1,7 +1,7 @@
 # ZFS on KISS Linux
 
 ## What is this?
-This repo contains KISS build files for ZFS on Linux.  Package contains userland utilities and kernel modules.
+This repo contains KISS build files for ZFS on Linux.  Package contains userland utilities and kernel modules.  It also contains the ZFS event daemon (zed).
 
 ## How to install?
 1. Clone this repo to your machine
