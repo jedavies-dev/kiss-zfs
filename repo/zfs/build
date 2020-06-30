@@ -1,6 +1,12 @@
 #!/bin/sh -e
 
+# This allows the kernel module to be loaded.
+# Otherwise license incompatibility would prevent
+# this from working. This is totally unsupported!
+sed -i 's/CDDL/GPL/g' META
+
 ./configure \
+    --build=powerpc64le-musl-linux \
     --disable-systemd \
     --disable-sysvinit \
     --disable-nls \
