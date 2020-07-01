@@ -2,8 +2,6 @@
 
 ## What is this?
 This repo contains KISS build files for ZFS on Linux.  Package contains userland utilities and kernel modules.  It also contains the ZFS event daemon (zed).
-**By using this repo you agree to the patching of the source code during the build process to enable loading of the CDDL-licensed kernel module.**
-  Note that there are [licensing differences between the Linux kernel and the ZFS kernel modules](https://www.softwarefreedom.org/resources/2016/linux-kernel-cddl.html).
   
 ## How to install?
 1. Enable the [community repository](https://k1ss.org/install#11.0) on your machine.
