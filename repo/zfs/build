@@ -6,7 +6,7 @@
 sed -i 's/CDDL/GPL/g' META
 
 ./configure \
-    --build=powerpc64le-musl-linux \
+    --build=$(cc -dumpmachine) \
     --disable-systemd \
     --disable-sysvinit \
     --disable-nls \
