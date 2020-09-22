@@ -1,2 +1,4 @@
 autoconf make
+eudev
 libtirpc
+util-linux
